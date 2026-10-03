@@ -2,6 +2,14 @@ spring:
   application:
     name: paymenty-service
 
+  kafka:
+    bootstrap-servers: ${KAFKA_BROKER:localhost:9092}
+    topic:
+      teste: teste
+    consumer:
+      group-id: paymenty-group
+      auto-offset-reset: latest
+
   datasource:
     driver-class-name: org.postgresql.Driver
     url: ${DB_URL:jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5434}/${DB_NAME:paymenty-db}}
@@ -14,6 +22,13 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+logging:
+  level:
+    org:
+      apache:
+        kafka: OFF
 
 server:
   port: 8091
