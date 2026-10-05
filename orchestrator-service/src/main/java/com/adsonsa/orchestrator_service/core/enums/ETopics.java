@@ -1,4 +1,4 @@
-package com.adsonsa.orchestrator_service;
+package com.adsonsa.orchestrator_service.core.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
