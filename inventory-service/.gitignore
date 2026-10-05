@@ -35,3 +35,8 @@ out/
 
 ### VS Code ###
 .vscode/
+.env
+hs_err_pid12504.log
+hs_err_pid14260.log
+replay_pid14260.log
+
